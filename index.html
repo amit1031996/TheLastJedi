@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Last Jedi</title>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+    <div id="wrapper">
+        <div id="nav">
+            <div id="nav_container">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 193.54 19.56"><defs><style>.cls-1{fill:#c02c27;}.cls-2{mask:url(#mask);}.cls-3{opacity:0.3;}.cls-4{mask:url(#mask-2);}.cls-5{mask:url(#mask-3);}.cls-6{mask:url(#mask-4);}.cls-7{mask:url(#mask-5);}.cls-8{mask:url(#mask-6);}.cls-9{filter:url(#luminosity-invert);}</style><filter id="luminosity-invert" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/></filter><mask id="mask" x="98.48" y="-2.1" width="34" height="24" maskUnits="userSpaceOnUse"><g class="cls-9"><image width="34" height="24" transform="translate(98.48 -2.1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAYCAIAAAAQxLheAAAACXBIWXMAAAsSAAALEgHS3X78AAADoklEQVRIS92VW0/qXBCGp0JLSTlUQFRQxASjQaNcaCIJv8NfqjERAugtMZIoxHBuCwVaKG05lVbafdF8qIDJjt/dfm+azDudZ63pdC2Af0mI+bDb7aFQaGdnhyRJgiAsFouu66Io0jT9+voKALFYLBwOu91uDMMAQNM0SZKazWYulzMrXF5eBoNBgiAQBFFVdTgcCoLAsmyz2QQAq5k0nU59Pt/5+Xk4HN7a2sJxXNd1juMKhYKJicfjsVjM7/fjOA4AqqryPE9RlNPpTKfTiUQikUgcHh66XC7DMIbDYafTKZVK0+n0GwYAcBz3+/2RSCQUCrlcLgRBxuPx0dFRNBpFEOT4+Hh/f58kSRRFzfWKohgIBBRFSafTV1dX8Xj84OCAIAhN03q93sbGBsuyuq6bxT8xsiwbhuF0Ore3t30+n9Vq1TQtGAyenp4CgNPpdDgcVutnvsfj8Xq9JEleXFxEIpG9vT2Px2O1WqfTKQAwDKMoSqFQWMbkcrnr6+v5fI6iKIqiAIBhGIZhm5ubsE42m83v97tcrpOTE7vdbjYTAAzDsFgsmqaZPFOfGAAQBEGW5Y+PD/hr4Ti+AJjSdX0ymfT7/U6nswhufM1oNpuDwWAymcD/kMmo1WpPT0+L4DfM4+NjtVoVBEFRlJXX/1aj0Yim6VKp9DX4DQMAHMcJgvDrDc1ms06nUy6Xk8nk1/gyhqbpVqsliiL8SqPRqNfrcRy3FF/GJJPJcrnc7/d/0TfDMCRJarfbFEUtWcsYAGi32xzH/aJvs9ms3+9XKpVUKrVkrcFQFMXzvCzLqxb8d5ppmrZqjcfjwWDA8/yqtQaTyWQqlUqv11vtmyRJ+Xz+4eHh/f19aR2GYciyzDBMvV6HFa3BAEC73eZ5fjQafQ0Oh8NisXh7e3tzc3N/f99sNmez2cKdTCbmjKXT6ZV6P2BommYYhuf5xYYURWFZtlgsPj8/A0C5XG40GqIoGoYBAPP5XJKkbrfb7XbXFvx22CyUSqXOzs7C4bDD4SBJ0jAM89vm8/m7uzsAqFQqFEUFAgEURW0223Q6ZVmWYZjVGTO1HgMADMNUq1UMwzwej2EY5t3z9vZmutlsNhqNer1eVVUJghiPx41Go1gsZjKZtdV+xNRqtd3dXVVV3W63ruvdbvfl5SWbzS4S6vW6z+cTRdFutyuK0mq1aJr+qdqPmJeXFwRB6vU6QRDmf9dqtb4m1Go1TdPMi86c8rUz9i/qD5N4J3e+Sv7EAAAAAElFTkSuQmCC"/></g></mask><mask id="mask-2" x="149.48" y="-2.1" width="47" height="24" maskUnits="userSpaceOnUse"><g class="cls-9"><image width="47" height="24" transform="translate(149.48 -2.1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAYCAIAAADlOjPuAAAACXBIWXMAAAsSAAALEgHS3X78AAAEw0lEQVRIS+1WzW7aXBC9tq+xHcBQBVNMSgR13dIoXaRVG1XNolL2WXXRV8im75JdniAvwCK7So0itVW7Qq3UugEJCCSAMNR/YF//fIuL/Dlgmj5Az8Zi5szozFzu3AHgH1aBwB9Jksrlci6XSyaTDMNQFEUQBEHMvUEQBEHg+77jOKZpdjqd8/Pz1TkBAODVq1ebm5s4G0mS0VQAAM/zPM+bzWamaQ6Hw06n02w2AQAQk8rl8osXLyRJwoJomsaCwhRBEOB4wzA6nc6jR49+/vwZq2l3d7dare7s7IiimM1mE4lEtLYwleM4uq4PBoNGo0EQxA01uVxOkqTt7e1isZhMJiGE0YJwFt/3EULT6VSSpFKpVCgUXNf99OlTVMqzZ8/29vZ2dnZkWS4UCriw5VSe5yGExuPx5eUlQqjRaGDXXE0ymczlcsVisVAo0DQN/gie59fW1jzPu76+XlBTKpVkWX78+HGlUslkMiRJrkoCAKBpejab8TzPcRy2zNUwDJNMJnEpq8Pn4HmeIAhd13u93t7eXvS8eJ4XBEEQhFulhIi2ba6GoiiapiGEUR5C6Pr62nEchmHW19fDCgAAqVQqn89vbGyUSqVoCISQYRiWZf8gBSHkOI5t26qqqqqqadpsNpuH4w9BEBRFRVP4vv/r16+zszNN03ie39/ff/DgQVgHQRAcx6VSqajEWzGdTvv9vqZplmVZlvX79+9+v99utyeTCSb8ryZ6pQEAlmUpinJ4eIh/1mo1URRTqVRIIEly4e8JADBN0zRN13XBElzXVRTl7OxsMBiYpmnbtmVZ+IZfXl5izo2jiYLjuK2trePjY9wbWZYX2oCvmG3bUWO321VV1TCMIAgWhI7H43q9/u7dO7AaN043elIURZXL5YODgzdv3hwcHNy/f5+iqCgZIaSqaq/XixrPz88VRRmNRgsqAQAQQlEU3759C1ZjZW8AAIlEQhTFVV7Lsvr9/vv37xfsFxcXw+HQsiyWZaP2dDp97969ly9fXl1dffjwAcThRm98348lxYKiqEwms2yv1Wqqqi6nghCur69XKpWHDx8uR805qxy3QhTF3d3do6Oj4XBo27bv+yRJMgwjCMLTp095nl8OWVtbu3v3riRJz58///LlyzJhrgYPfvyk/SVYlpVlOZvNGobhOI7neXhoZTKZfD6fSCSWQyCELMtyHBfbVBCq8X3f87yF9jqOM51OIYQcx8VOMzy+cSy2LAytBeBnzjRNXddjCXM1rusihBBCoUPTtFar9e3bN0EQKpVKPp9Pp9OxKfDgiXUtwDTN0WjU6/U+f/4cS5hf2idPnlQqlTt37uCLoOt6q9U6PT09PDz0PI8kSQhh7Ovx98DvmqIo9Xr9+/fvsZx5asMwhsNht9t1HIemaV3XG43GxcUFAODk5ETX9clkIstyqVQSBIFlWbwA4ZYsTLkQ4WLluu50Oh2NRoqi/Pjxo91ux/JBqEZV1UajEQRBNpulKMowjHa73e12sbdWq2maVq1W8QLE8/zyfriMcLFCCJmmORgMFEX5+vXrx48fV4Xc2ETxSZEkOZvNJpNJs9nE7Qnx+vXrYrGYTqejO1SsINwYfFVd17VtezweX11drfrH/MNt+A+qZXDB7cIcEgAAAABJRU5ErkJggg=="/></g></mask><mask id="mask-3" x="124.48" y="-2.1" width="28" height="24" maskUnits="userSpaceOnUse"><g class="cls-9"><image width="28" height="24" transform="translate(124.48 -2.1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAIAAABm/grVAAAACXBIWXMAAAsSAAALEgHS3X78AAACz0lEQVQ4T9WUT0+rTBTGp0BhigzIIJRAyp8obHTjqjEx8Q+fyo/hhzJuTNwYE21MbYw1akEbKQ46hbuo8Spg7r27932Wz3POL3NOZgaA/4taPwVhGPq+jzEWRZHneYZhAADz+fz9/T3LsiRJrq+vLy4uGnu5RhcAEARBv9/3PA9jDCFkWRYAMJ/PCSFJkoxGo3a7/c9Qx3E2NjbCMNQ0TRCEBbQoijzPJ5MJQuju7u6nXrbR3dvb293d3dzcdF1X07ROpyMIgiAIEEJJkjqdDsuyr6+vs9lsNBrV25m6BQDwPM91XcMwEEL1FCGk67pt257n1VPwE9SyLF3XZVluTAEAkiTpum5ZVmPaMH4URTs7O+vr6ysrK61W8/XgOI5S+vLykqbpcDispA0n9TzPtm1Zln8iAgAYhlEUxbZt3/cb0rplGIaqqktLS/XoqxYb6Ha79agKjaIoCAJd1yGE9eqvEgRB07TV1dX9/f1KVIW6rruYHfyFJEnqdruu61b8KtSyLIzxH2dfSBRFVVVN06z436BRFPm+v3hC4C/E87xhGGtra5UNfIM6jmOaZuOFbxTDMLIsm6ZZ2cC3t48xVhSlcsyyLCmlZVm2Wi2GYRafwKcghMvLyxjjr+Zv6Pb2tuM4CCGO+zCLophMJnEcE0IopQAAnudFUcQYa5r20c9xkiTZtr21tXV8fFyFWpa1GDzPc4Zh3t7e7u/vLy8vz87Onp+fP6GKovT7/SAIVFVlWZYQUhSFKIq6rn+iPqBhGGKMKaVPT08cx3Ecl6bp1dXV0dHR4eEh+K6Dg4Msy3q9HoSQEBLHcZZlPM9XoRDCNE3H43FRFOPxGAAwnU6Hw+Hp6Smo6fz8HCH08PAgiiKlNEmSx8dHSmmv17u5ufkNTZJkMBjEcYwQarfbZVnOZrPb29uTk5M6dDAYEEJUVV1UEkKm02kcx3me14v/2/oFzCT+4ONgWFAAAAAASUVORK5CYII="/></g></mask><mask id="mask-4" x="-2.52" y="-2.1" width="49" height="24" maskUnits="userSpaceOnUse"><g class="cls-9"><image width="49" height="24" transform="translate(-2.52 -2.1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAYCAIAAADcXYK1AAAACXBIWXMAAAsSAAALEgHS3X78AAAEBElEQVRIS+2WS0/qTBzGpwUptwJyixGCmCZicKNhoWhiXLgzfhZXfhE/igs3rlwYwYWJiTEh8VJBUGi5lJZ2ppTOWQw2fduj4Ls+z4IwM89Mfpn+55kB4J/mETXL4NT29nYul2NZlmEYj8dDURRF/XoRjLFpmpPJRNd1CKGiKN1ut9ls8jwPAPDOmv4fHR4e7u7uchwXj8eDwaDX66VpmjDNSYYxBgCYpmmapq7rqqoOBoNOp8PzPMb410x7e3v7+/ulUml1dTUej5N9omkaAEB+55RpmhjjyWSCEJJlWRRFlmURQq+vr8TwC6ZCoVAsFtfW1jKZTCAQmGWfLYQQRVEIoWAwyDDMwsIC6Z+XqVwuFwqFbDabSqW+A5pMJpPJBABAURRN0x6P5682AIBhGBBCVVWHw6Esy6PRCCE0Ho/J6LxM6XQ6Ho+zLBsMBt2jEMJms6koiq7rpmnSNM0wTCgUSqVSkUjEYe52u+12W5Kk0WikKEq/3xdFsdVqybJMDPMykSIAX0Vq13g8rtVqV1dXgiAghCymeDx+cHCwvr5u39der/f4+FitVgVBUFVV0zQIoSzLkiR9fHwQz7xMgiC0Wi1RFLPZrM/nsw/Jsvzw8HBycuKedXZ2tri4mM/nSRNjLAjC7e3t6emp22xp3vNSqVRub28bjYYkSY4hj8cTiUSOjo7cswRBUBSFFBkAwDAMVVX7/b7bade8TACAi4uL+/v7druNELL3+/3+ZDK5sbHhngIhhBBaTOT8QwjdTrt+wQQAqNVqn5+fqqraOxmGyWazm5ubx8fHDj85iVYJkliyEL/T75jOz897vZ5pmo7+WCzGcVy5XN7Z2bH3k7y2mMh/9ylxaFrjHMetrKwkEolQKOT3+0lAW3cZCRu/359Kpba2tliWdawSCoWSyWQmk8lms/Z+/CWraUf8TlOmXC5XKpU4jkun0+Fw2Ofz0TRtYREmhmFYll1aWnKcOwCAFUiO9LLuWtI0vwR+1JQpFovl8/lisbi8vByNRgkToaG+5PF4fohmx5YQESALghTTvEyBQCAajSYSiXQ67f40MwUhHA6HkiQ5yt8wDISQdU51XUcIzazxeTPzByGEBEFoNpv1er3ZbNqHrIz2+XwYY3KfzMyCKZOmaZIkiaLIMAxCyOfzWWXunmO9gcg2DAaDRqNxd3d3c3NTqVTsztFo1Ol03t/fNU0DAIii2Ol0HHvp1pRpMBjwPO/1ervd7jxvSJI0hmFomtbv95+enq6vry8vLx02URRfXl5M04xEIhjj4XD49vYmiuJf17Q0ZarX6zRN8zwfDocZhvnhAWkPG5LLiqLwPF+tVoFLjUYDY/z8/Oz3+wEAEMJer+f4vv/0f/UH59uAMyel+moAAAAASUVORK5CYII="/></g></mask><mask id="mask-5" x="38.48" y="-2.1" width="28" height="24" maskUnits="userSpaceOnUse"><g class="cls-9"><image width="28" height="24" transform="translate(38.48 -2.1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAIAAABm/grVAAAACXBIWXMAAAsSAAALEgHS3X78AAADD0lEQVQ4T9WUTU/qQBSGp52SflBsaacdFAq2RITAxq+4MkEIS3+Av9D4B1y4YuPOqIkBXRhDYqMY5KupFKGtd2FCSum9yd3d++76nJ4nZyYzA8D/EuIPtb29PU3TRFGkaRpCSBCE7/vz+dxxnNFo1Ol0Wq1WZCMVSQEABwcHR0dHhUIBYxyPx2OxGADA9/2vry/Lsl5eXq6vr/9aahhGuVyuVCrr6+scx1EUtZh0PB6rquq6rmmaV1dXq72/labTaV3Xc7kcQghCGCytra1BCPv9vmEYkVJyFQEAarXa9vb2xsaGJEkhIwCApmlZljHGGOPI9mjp5uZmJpORZflnK1cTj8dVVS0Wi41GY7UaLVUURVEUnucjqwAACKEsy5qmZbPZ1WqEtFarlUolhBDDMEFu27bv+4tPnucVRUmlUiuCKKmu6xhjQRCCsNPpNJvNbre7IAzDIITy+Xy9Xg8ZIqSKoiCEOI5bEMdx2u32yclJq9WaTqcLzvN8KpXK5XIhQ1har9e3trZkWQ6unWXZnZ2di4uLcrkc5BzHSZKkKEpIEj4ux8fHh4eH+XyeZdkgTyQS2Ww2mUwGIYTQcZzJZDKZTJ6fnxc8PClCKLT2RWiaDhGCICRJSqfToTOwJK1Wq4VCQZKk1f7f5WcHVFUNwiWppmkIIZ7nCSL8enme57qu53khzjBMMpnUdb1arS7g0t0XBIHn+eC9nM1mlmV9fHxMp1Pf90mSZBhGFEWEEEVRAACCIDiOk2XZMIxmsxmW7u/vq6oKIXRddzabkSRp2/b7+/vDw8Pj46NlWZ7nQQgTiUSlUikWixhjlmV933ddl+f5TCazu7t7c3OzJBUE4fv727Ksbrf7+fnp+36/32+325eXl+fn5yCQ09PTRqNRKpUkSSJJ0rIs27ZJkhRFMTyp4zi9Xu/p6Wk8HrMsO5/P397ebm9vQ0YAwNnZGUVRo9EIYxyLxX4ae72e4zhLUoZhBoPB/f29aZocx0EIPc8bDoemaYKo3N3dDYfDn4fV8zzbtgeDwevra+TP/3B+AdwSIsesjTp5AAAAAElFTkSuQmCC"/></g></mask><mask id="mask-6" x="63.48" y="-2.1" width="32" height="24" maskUnits="userSpaceOnUse"><g class="cls-9"><image width="32" height="24" transform="translate(63.48 -2.1)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAIAAAAUMWhjAAAACXBIWXMAAAsSAAALEgHS3X78AAADUElEQVRIS92VzU6jUBiGDxwoUGxLDSZIWtOGdGGicVcX3oHxIrwIL8Rb8A5c4MKdKzW6bzVK05Y2rVSR0j84wGEWp9NpiXVmljPP5hDej/eFj/MDwL8ORQZN00qlkizLoihyHAchpCiKoqhFXRzHcRxHURQEgeu6nU7n9vZ2jecKDBlKpVK1WtU0jWSwLEsyFnUkIAgChJDjOL1eb3d3t1ar3d3drXGeMw+QZVnTtL29PVVVRVFkGIam6eUAAADGGGMcBMF0OrUsS1VVWZajKHp4ePjKec48QBRFWZZVVVUUhWXZbx4AAGCMJUnied73/Xa7/UcBHMeJokiasyyHYeg4DkVRkiRBCMlNmqaz2ayiKIVCYWtrK2m5Ck0GCCHLsgzDJORGo3F1daXrumEYGONlaWNjY3Nzs1gsVqtVsJ65I0VREEKappc113Vrtdrp6SkA4PLyslgsCoKwUCGEqVRKEIR8Pg/W8ysgMS8BAIIgHBwcXFxcRFG0v7/P8/yyijH2fX88Hg+HQ7CelZ4kvoBl2Z2dnePjYwCAJEmJeM/zHMcxTfP+/h6sJ9n0BBBCWZa/lDzP6/f7r6+vX6oLVl75rxiPx91u9/r6+vuylYDEPPkeCGEmk/ld1e9a9A2KohweHp6fnw8Gg+l0ihDyPG82m72/v7darefnZ1I2D4jjGGMcx/F6wyQ8z1cqlVwu57rubDYjM8q27VarJYpiMgD/ZL3hF4iiWC6XwzAMw9D3ffL6uVwuCIJOp/P4+AgWAVEUIYSCIEhYOI4zmUwEQUin04l1sIBhGIZheJ7PZrMsy85mM1VVVVWdq2TwfX8ymUwmk0wmk0qlAAAIobe3N8Mwms2mLMuKomxvb0uSJAhCYrksINtBKpXiOI7jOHJzvn9VKhVFUQRBIOvTdd1+v1+v129ubs7Ozkaj0WAw8DwPIRRFURiG5OQh12EYIoTIP/j8/LQsq9vtvry8PD09gcUX2LbdaDQAAL1ej+O4KIqGw6FpmvV6HQCg67qu6ycnJ0dHR+VyOZ/PcxxHzgzyODnsEEKj0ciyrHa7vdg/5gHNZhMAYBhGOp1mGAZj7HmebdumaYKf6LruOE6hUCBtXD7yyCQkv3o8Hn98fBDD/4Ifqia++ejJYswAAAAASUVORK5CYII="/></g></mask></defs><title>logo</title><g id="Layer_2" data-name="Layer 2"><g id="Content"><path class="cls-1" d="M130.07.34H122.8l-.27.79c-.44,1.26-1,2.93-1.5,4.33-.08-.21-.16-.43-.24-.67l-1.26-3.72-.27-.79h-7l-.27.78L110.43,5.4c-.5-1.42-1.09-3.07-1.54-4.33l-.27-.78h-7.24l.53,1.55,5.72,16.81.27.79h5l.28-.77,2.58-7.08.7,2,1.78,5.15.27.79h5l.27-.79,5.79-16.88Z"/><g class="cls-2"><g class="cls-3"><path d="M130.07.34H122.8l-.27.79c-.44,1.26-1,2.93-1.5,4.33-.08-.21-.16-.43-.24-.67l-1.26-3.72-.27-.79h-7l-.27.78L110.43,5.4c-.5-1.42-1.09-3.07-1.54-4.33l-.27-.78h-7.24l.53,1.55,5.72,16.81.27.79h5l.28-.77,2.58-7.08.7,2,1.78,5.15.27.79h5l.27-.79,5.79-16.88Z"/></g></g><path class="cls-1" d="M192.37.22H181.6a6,6,0,0,0-4.48,1.7,5.34,5.34,0,0,0-1.48,3.59V5.7c0,1.22.17,2.6,2.43,4.86a22.38,22.38,0,0,1,1.48,1.77c-.62.07-2.19.07-3.83.07h-1.55c-2.91,0-5.36,0-5.86-.1l-.28-.22a7.9,7.9,0,0,0,2.5-2.4,7.66,7.66,0,0,0,.74-2A5.72,5.72,0,0,0,170,3.16,7,7,0,0,0,164.74.42h-12.9V1.58l0,16.79v1.16H153l5.24,0h1.17V18.4l0-3.9.33.32c3.53,3.39,4.72,4.33,5.77,4.57.29.06.77.17,9.28.17h.4c4.61,0,6.92,0,8.29-.13a4.35,4.35,0,0,0,2.85-1.13l0,0a5.67,5.67,0,0,0,2.15-5c-.15-1.18-.47-1.67-1.74-3.26l-.38-.48-1.34-1.67c-.29-.37-.52-.69-.66-.9h.72l7.19,0h1.17V.22ZM159.45,7.93V7c0-.29,0-.58,0-.85h1.63a21.75,21.75,0,0,1,2.63.09,1,1,0,0,1,.52.88.84.84,0,0,1-.55.73A9.36,9.36,0,0,1,161,8C160.32,8,159.82,8,159.45,7.93Z"/><g class="cls-4"><g class="cls-3"><path d="M192.37.22H181.6a6,6,0,0,0-4.48,1.7,5.34,5.34,0,0,0-1.48,3.59V5.7c0,1.22.17,2.6,2.43,4.86a22.38,22.38,0,0,1,1.48,1.77c-.62.07-2.19.07-3.83.07h-1.55c-2.91,0-5.36,0-5.86-.1l-.28-.22a7.9,7.9,0,0,0,2.5-2.4,7.66,7.66,0,0,0,.74-2A5.72,5.72,0,0,0,170,3.16,7,7,0,0,0,164.74.42h-12.9V1.58l0,16.79v1.16H153l5.24,0h1.17V18.4l0-3.9.33.32c3.53,3.39,4.72,4.33,5.77,4.57.29.06.77.17,9.28.17h.4c4.61,0,6.92,0,8.29-.13a4.35,4.35,0,0,0,2.85-1.13l0,0a5.67,5.67,0,0,0,2.15-5c-.15-1.18-.47-1.67-1.74-3.26l-.38-.48-1.34-1.67c-.29-.37-.52-.69-.66-.9h.72l7.19,0h1.17V.22ZM159.45,7.93V7c0-.29,0-.58,0-.85h1.63a21.75,21.75,0,0,1,2.63.09,1,1,0,0,1,.52.88.84.84,0,0,1-.55.73A9.36,9.36,0,0,1,161,8C160.32,8,159.82,8,159.45,7.93Z"/></g></g><path class="cls-1" d="M143.5.93l-.28-.78h-9.63l-.27.78-5.81,16.83L127,19.3h1.62l4.75.05h.88l.25-.84.51-1.7,6.84.05.54,1.73.26.82h.86l4.79,0h1.63l-.53-1.54Zm-4.69,7.35c.09.28.51,1.5.86,2.54h-2.45c.22-.61.52-1.42.92-2.53.13-.34.25-.66.35-1C138.59,7.63,138.69,7.94,138.81,8.28Z"/><g class="cls-5"><g class="cls-3"><path d="M143.5.93l-.28-.78h-9.63l-.27.78-5.81,16.83L127,19.3h1.62l4.75.05h.88l.25-.84.51-1.7,6.84.05.54,1.73.26.82h.86l4.79,0h1.63l-.53-1.54Zm-4.69,7.35c.09.28.51,1.5.86,2.54h-2.45c.22-.61.52-1.42.92-2.53.13-.34.25-.66.35-1C138.59,7.63,138.69,7.94,138.81,8.28Z"/></g></g><path class="cls-1" d="M44.47,6.51V0H43.3L16.79,0a5.25,5.25,0,0,0-4,1.86,6,6,0,0,0-1.49,3.43c-.14,2,.31,2.68,2.49,5.14.63.71,1.23,1.38,1.43,1.67v0h0l-.12.09H0v7H11.63c4.16,0,6.22,0,7.43-.09a4.41,4.41,0,0,0,2.49-.75l.08-.05A5.61,5.61,0,0,0,23.88,12a31.51,31.51,0,0,0-2.24-3.13A19.2,19.2,0,0,1,20,6.62s0-.06,0-.08h.15l8.59,0V19.28H36.1V6.51h8.37Z"/><g class="cls-6"><g class="cls-3"><path d="M44.47,6.51V0H43.3L16.79,0a5.25,5.25,0,0,0-4,1.86,6,6,0,0,0-1.49,3.43c-.14,2,.31,2.68,2.49,5.14.63.71,1.23,1.38,1.43,1.67v0h0l-.12.09H0v7H11.63c4.16,0,6.22,0,7.43-.09a4.41,4.41,0,0,0,2.49-.75l.08-.05A5.61,5.61,0,0,0,23.88,12a31.51,31.51,0,0,0-2.24-3.13A19.2,19.2,0,0,1,20,6.62s0-.06,0-.08h.15l8.59,0V19.28H36.1V6.51h8.37Z"/></g></g><path class="cls-1" d="M58,.92,57.72.14H48l-.27.78-5.8,16.81-.53,1.55h7.37l.25-.82.51-1.62,6.8,0,.53,1.72.25.82H58l4.78,0h1.65l-.54-1.56Zm-6.32,10c.36-1,.86-2.43,1.32-3.69l1.25,3.69Z"/><g class="cls-7"><g class="cls-3"><path d="M58,.92,57.72.14H48l-.27.78-5.8,16.81-.53,1.55h7.37l.25-.82.51-1.62,6.8,0,.53,1.72.25.82H58l4.78,0h1.65l-.54-1.56Zm-6.32,10c.36-1,.86-2.43,1.32-3.69l1.25,3.69Z"/></g></g><path class="cls-1" d="M92.46,13.47l0-1.13-1.13,0-8.67-.12-.18-.14-.21-.18.18-.1A6.06,6.06,0,0,0,85.58,6a5.18,5.18,0,0,0-1.39-3.5A6.19,6.19,0,0,0,80.47.3c-.79-.14-4.8-.16-7.11-.16H66.09V19.28h7.75V14.43l.12.12c3.65,3.47,4.73,4.25,5.44,4.5.54.18,1.45.23,6.45.23h6.74l0-1.19ZM78,7.62l0,0c-.27,0-1.28,0-2.55,0h-1.7V5.86h1.45a9.62,9.62,0,0,1,2.7.14c.47.21.52.31.56.73S78.43,7.31,78,7.62Z"/><g class="cls-8"><g class="cls-3"><path d="M92.46,13.47l0-1.13-1.13,0-8.67-.12-.18-.14-.21-.18.18-.1A6.06,6.06,0,0,0,85.58,6a5.18,5.18,0,0,0-1.39-3.5A6.19,6.19,0,0,0,80.47.3c-.79-.14-4.8-.16-7.11-.16H66.09V19.28h7.75V14.43l.12.12c3.65,3.47,4.73,4.25,5.44,4.5.54.18,1.45.23,6.45.23h6.74l0-1.19ZM78,7.62l0,0c-.27,0-1.28,0-2.55,0h-1.7V5.86h1.45a9.62,9.62,0,0,1,2.7.14c.47.21.52.31.56.73S78.43,7.31,78,7.62Z"/></g></g></g></g></svg>
+                <div id="nav-icon3">
+                    <div id="span_container">
+                        <span class="normal"></span>
+                        <span class="saber">
+                        <div class="saber_container">
+                            <div class="blade blue"></div>
+                            <div class="gap"></div>
+                            <div class="hilt grey"></div>
+                        </div>
+                    </span>
+                        <span class="saber">
+                        <div class="saber_container">
+                            <div class="hilt black"></div>
+                            <div class="gap"></div>
+                            <div class="blade red"></div>
+                        </div>
+                    </span>
+                        <span class="normal"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 70px" id="fill"></div>
+        <div id="tray">
+            <div id="tray_container">
+                <div id="tray_links">
+                    <div class="tray_link"><a href="#home" class="hashscroll tray_anchor"><div class="tray_title">Home</div></a></div>
+                    <div class="tray_link"><a href="#video" class="hashscroll tray_anchor"><div class="tray_title">Videos</div></a></div>
+                    <div class="tray_link"><a href="#cast" class="hashscroll tray_anchor"><div class="tray_title">Cast</div></a></div>
+                    <div class="tray_link"><a href="#gallery" class="hashscroll tray_anchor"><div class="tray_title">Gallery</div></a></div>
+                    <div class="tray_link"><a href="#music" class="hashscroll tray_anchor"><div class="tray_title">Music</div></a></div>
+                </div>
+            </div>
+        </div>
+        <div id="cover">
+        </div>
+        <div id="nav2">
+            <div id="links">
+                <a href="#home" class="link hashscroll active_link">home</a>
+                <a href="#video" class="link hashscroll">videos</a>
+                <a href="#cast" class="link hashscroll">cast</a>
+                <a href="#gallery" class="link hashscroll">gallery</a>
+                <a href="#music" class="link hashscroll">music</a>
+            </div>
+        </div>
+        <section id="home">
+            <div class="content">
+                <div class="line"></div>
+                <div id="block">
+                    <div id="poster">
+                        <img id="desk_post" src="assets/desk/1x/poster.jpg" alt="">
+                        <img id="tab_post" src="assets/tab/1x/poster.jpg" alt="">
+                    </div>
+                    <div id="info">
+                        <div id="movie">
+                            <div id="title"><span style="font-family: bold-text">Star Wars:</span><span style="font-family: bold-italic-text"> The Last Jedi</span></div>
+                            <br>
+                            <div id="synopsis"> Luke Skywalker's peaceful and solitary existence gets upended when he encounters Rey, a young woman who shows strong signs of the Force. Her desire to learn the ways of the Jedi forces Luke to make a decision that changes their lives forever. Meanwhile, Kylo Ren and General Hux lead the First Order in an all-out assault against Leia and the Resistance for supremacy of the galaxy.</div>
+                        </div>
+                        <div id="makers">
+                            <div id="role">Director <br> Producer <br> Music <br> Cinematographer</div>
+                            <div id="name" style="text-align: right">Rian Jonhnson <br> Ram Bergman <br> John Williams <br> Steve Yedlin<br></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+        </section>
+        <section id="video">
+            <div class="heading">Video</div>
+            <div id="vid_container">
+                <div id="player"></div>
+            </div>
+            <div id="play" class="video_font">
+                <div class="play_option video_1" style="background: rgba(0,0,0,0.6)">
+                    <div class="play_group">
+                        <div class="play_img active_video">
+                            <img src="assets/desk/1x/thumb1.png" alt="">
+                        </div>
+                        <div class="play_desc">
+                            <div class="play_title"> Official Trailer</div>
+                            <div class="play_info">2:34</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="play_option video_2" style="background: rgba(0,0,0,0.4)">
+                    <div class="play_group">
+                        <div class="play_img">
+                            <img src="assets/desk/1x/thumb2.png" alt="">
+                        </div>
+                        <div class="play_desc">
+                            <div class="play_title"> Reylo vs Guards</div>
+                            <div class="play_info">2:40</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="play_option video_3" style="background: rgba(0,0,0,0.1)">
+                    <div class="play_group">
+                        <div class="play_img">
+                            <img src="assets/desk/1x/thumb4.png" alt="">
+                        </div>
+                        <div class="play_desc">
+                            <div class="play_title">Behind The Scenes</div>
+                            <div class="play_info">2:59</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="play2" class="video_font">
+                <div class="play_option2 video_1" style="background: url('assets/tab/1x/thumb1.jpg') center/101% no-repeat">
+                    <div class="play_desc2_active">
+                        <div class="play_title2_active">Official Trailer</div>
+                        <div class="play_info2_active">2:34</div>
+                    </div>
+                    <div class="play_desc2 invisible" >
+                        <div class="play_title2">Official Trailer</div>
+                        <div class="play_info2">2:34</div>
+                    </div>
+                    <div class="active_video2">NOW PLAYING</div>
+                </div>
+                <div class="play_option2 video_2" style="background: url('assets/tab/1x/thumb2.jpg') center/101% no-repeat">
+                    <div class="play_desc2_active invisible">
+                        <div class="play_title2_active">Reylo vs. Guards</div>
+                        <div class="play_info2_active">2:40</div>
+                    </div>
+                    <div class="play_desc2" >
+                        <div class="play_title2">Reylo vs. Guards</div>
+                        <div class="play_info2">2:40</div>
+                    </div>
+                    <div class="active_video2 invisible">NOW PLAYING</div>
+                </div>
+                <div class="play_option2 video_3" style="background: url('assets/tab/1x/thumb4.jpg') center/101% no-repeat">
+                    <div class="play_desc2_active invisible">
+                        <div class="play_title2_active">Behind The Scenes</div>
+                        <div class="play_info2_active">2:59</div>
+                    </div>
+                    <div class="play_desc2" >
+                        <div class="play_title2">Behind The Scenes</div>
+                        <div class="play_info2">2:59</div>
+                    </div>
+                    <div class="active_video2 invisible">NOW PLAYING</div>
+                </div>
+            </div>
+        </section>
+        <section id="cast">
+            <div class="heading">Cast & Characters</div>
+            <div id="cast_container">
+                <div class="cast_group">
+                    <div class="cast_img">
+                        <img src="assets/desk/1x/rey.png" alt="">
+                        <img src="assets/tab/1x/rey.png" alt="">
+                        <img src="assets/mob/1x/rey.png" alt="">
+                    </div>
+                    <div class="cast_text">
+                        <div class="character">Rey</div>
+                        <div class="actor">Daisey Ridley</div>
+                    </div>
+                </div>
+                <div class="cast_group">
+                    <div class="cast_img">
+                        <img src="assets/desk/1x/kylo.png" alt="">
+                        <img src="assets/tab/1x/kylo.png" alt="">
+                        <img src="assets/mob/1x/kylo.png" alt="">
+                    </div>
+                    <div class="cast_text">
+                        <div class="character">Kylo Ren</div>
+                        <div class="actor">Adam Driver</div>
+                    </div>
+                </div>
+                <div class="cast_group">
+                    <div class="cast_img">
+                        <img src="assets/desk/1x/leia.png" alt="">
+                        <img src="assets/tab/1x/leia.png" alt="">
+                        <img src="assets/mob/1x/leia.png" alt="">
+                    </div>
+                    <div class="cast_text">
+                        <div class="character">General Leia</div>
+                        <div class="actor">Carrie Fisher</div>
+                    </div>
+                </div>
+                <div class="cast_group">
+                    <div class="cast_img">
+                        <img src="assets/desk/1x/luke.png" alt="">
+                        <img src="assets/tab/1x/luke.png" alt="">
+                        <img src="assets/mob/1x/luke.png" alt="">
+                    </div>
+                    <div class="cast_text">
+                        <div class="character">Luke Skywalker</div>
+                        <div class="actor">Mark Hammil</div>
+                    </div>
+                </div>
+                <div class="cast_group">
+                    <div class="cast_img">
+                        <img src="assets/desk/1x/snoke.png" alt="">
+                        <img src="assets/tab/1x/snoke.png" alt="">
+                        <img src="assets/mob/1x/snoke.png" alt="">
+                    </div>
+                    <div class="cast_text">
+                        <div class="character">Snoke</div>
+                        <div class="actor">Andy Serkis</div>
+                    </div>
+                </div>
+                <div class="cast_group">
+                    <div class="cast_img">
+                        <img src="assets/desk/1x/dj.png" alt="">
+                        <img src="assets/tab/1x/dj.png" alt="">
+                        <img src="assets/mob/1x/dj.png" alt="">
+                    </div>
+                    <div class="cast_text">
+                        <div class="character">DJ</div>
+                        <div class="actor">Benicio Del Torro</div>
+                    </div>
+                </div>
+                <div class="cast_group">
+                    <div class="cast_img">
+                        <img src="assets/desk/1x/poe.png" alt="">
+                        <img src="assets/tab/1x/poe.png" alt="">
+                        <img src="assets/mob/1x/poe.png" alt="">
+                    </div>
+                    <div class="cast_text">
+                        <div class="character">Poe</div>
+                        <div class="actor">Oscar Isaac</div>
+                    </div>
+                </div>
+                <div class="cast_group">
+                    <div class="cast_img">
+                        <img src="assets/desk/1x/finn.png" alt="">
+                        <img src="assets/tab/1x/finn.png" alt="">
+                        <img src="assets/mob/1x/finn.png" alt="">
+                    </div>
+                    <div class="cast_text">
+                        <div class="character">Finn</div>
+                        <div class="actor">John Boyega</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="heading">Gallery</div>
+            <img src="assets/desk/1x/gallery.jpg" style="width: 100%" alt="">
+            <img src="assets/tab/1x/gallery.jpg" style="width: 100%" alt="">
+            <img src="assets/mob/1x/gallery.jpg"  style="width: 100%" alt="">
+        </section>
+        <section id="music">
+            <div class="heading">Music</div>
+            <div class="audio-player">
+                <div class="player_img">
+                    <img src="assets/desk/1x/album.jpg" alt="">
+                    <img src="assets/tab/1x/album.jpg" alt="">
+                    <img src="assets/mob/1x/album.jpg" id="mob_album" alt="">
+                    <div id="play_button">
+                        <img src="assets/desk/1x/play.png" alt="play">
+                        <img src="assets/tab/1x/play.png" alt="play">
+                        <img src="assets/mob/1x/play.png" alt="play">
+                    </div>
+                    <div id="pause_button" class="invisible">
+                        <img src="assets/desk/1x/pause.png" alt="play">
+                        <img src="assets/tab/1x/pause.png" alt="play">
+                        <img src="assets/mob/1x/pause.png" alt="play">
+                    </div>
+                </div>
+                <div class="player_details">
+                    <div class="details_container">
+                        <div class="track_details">
+                            <div class="track_title">Ahch-To Island</div>
+                            <div class="album">The Last Jedi Original Soundtrack</div>
+                            <div class="composer">John Williams</div>
+                        </div>
+                        <div class="audio_progress">
+                            <div class="runtime">
+                                Runtime: 4:26
+                            </div>
+                            <div class="progress_bar">
+                                <div class="total_time">
+                                    <div class="current_time"></div>
+                                </div>
+                            </div>
+                            <audio id="audio-player" src="assets/music/Ahch_To_Island.mp3" type="audio/mp3" controls="controls"></audio>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            ©  Lucasfilms Ltd.  All rights reserved.
+        </section>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/mediaelement-and-player.min.js"></script>
+        <script async>
+            var audioPause = 1;
+            var activeVideo = 1;
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            var player;
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    width: "100%",
+                    height: "100%",
+                    frameborder: "0px",
+                    videoId: 'Q0CbN8sfihY?REL=0&showinfo=0&controls=0&modesbranding=1&rel=0&rel=0',
+                    playerVars: {
+                        'rel': 0
+                    },
+                    events: {
+                        'onReady': onPlayerReady
+                    }
+                });
+            }
+            function onPlayerReady(event) {
+//                event.target.playVideo();
+            }
+            function stopVideo() {
+                player.stopVideo();
+            }
+            $('.video_1').on('click',function () {
+                player.loadVideoById({'videoId': 'Q0CbN8sfihY',
+                    'rel': 0,
+                    'suggestedQuality': 'large'});
+                if(activeVideo == 1){
+                    return;
+                }
+                $('.play_img').removeClass('active_video');
+                $('.video_1 .play_group .play_img').addClass('active_video');
+                $('.video_1 .play_desc2').toggleClass('invisible');
+                $('.video_1 .play_desc2_active').toggleClass('invisible');
+                $('.video_1 .active_video2').toggleClass('invisible');
+                switch (activeVideo){
+                    case 2:
+                        $('.video_2 .play_desc2').toggleClass('invisible');
+                        $('.video_2 .play_desc2_active').toggleClass('invisible');
+                        $('.video_2 .active_video2').toggleClass('invisible');
+                        break;
+                    case 3:
+                        $('.video_3 .play_desc2').toggleClass('invisible');
+                        $('.video_3 .play_desc2_active').toggleClass('invisible');
+                        $('.video_3 .active_video2').toggleClass('invisible');
+                        break;
+                }
+                activeVideo = 1;
+            });
+            $('.video_2').on('click',function () {
+                player.loadVideoById({'videoId': 'Tp8t6KnIlB0',
+                    'rel': 0,
+                    'startSeconds': 8,
+                    'endSeconds': 168,
+                    'suggestedQuality': 'large'});
+                if(activeVideo == 2){
+                    return;
+                }
+                $('.play_img').removeClass('active_video');
+                $('.video_2 .play_group .play_img').addClass('active_video');
+                $('.video_2 .play_desc2').toggleClass('invisible');
+                $('.video_2 .play_desc2_active').toggleClass('invisible');
+                $('.video_2 .active_video2').toggleClass('invisible');
+                switch (activeVideo){
+                    case 1:
+                        $('.video_1 .play_desc2').toggleClass('invisible');
+                        $('.video_1 .play_desc2_active').toggleClass('invisible');
+                        $('.video_1 .active_video2').toggleClass('invisible');
+                        break;
+                    case 3:
+                        $('.video_3 .play_desc2').toggleClass('invisible');
+                        $('.video_3 .play_desc2_active').toggleClass('invisible');
+                        $('.video_3 .active_video2').toggleClass('invisible');
+                        break;
+                }
+                activeVideo = 2;
+            });
+            $('.video_3').on('click',function () {
+                player.loadVideoById({'videoId': 'ye6GCY_vqYk',
+                    'rel': 0,
+                    'suggestedQuality': 'large'});
+                if(activeVideo == 3){
+                    return;
+                }
+                $('.play_img').removeClass('active_video');
+                $('.video_3 .play_group .play_img').addClass('active_video');
+                $('.video_3 .play_desc2').toggleClass('invisible');
+                $('.video_3 .play_desc2_active').toggleClass('invisible');
+                $('.video_3 .active_video2').toggleClass('invisible');
+                switch (activeVideo){
+                    case 2:
+                        $('.video_2 .play_desc2').toggleClass('invisible');
+                        $('.video_2 .play_desc2_active').toggleClass('invisible');
+                        $('.video_2 .active_video2').toggleClass('invisible');
+                        break;
+                    case 1:
+                        $('.video_1 .play_desc2').toggleClass('invisible');
+                        $('.video_1 .play_desc2_active').toggleClass('invisible');
+                        $('.video_1 .active_video2').toggleClass('invisible');
+                        break;
+                }
+                activeVideo = 3;
+            });
+            $('.player_img').on('click',function () {
+                if(audioPause){
+                    $('#audio-player')[0].play();
+                    $('#play_button, #pause_button').toggleClass('invisible');
+                    audioPause = 0
+                }
+                else{
+                    $('#audio-player')[0].pause();
+                    $('#play_button, #pause_button').toggleClass('invisible');
+                    audioPause = 1
+                }
+            });
+            var song = $('#audio-player')[0];
+            song.addEventListener('timeupdate', function () {
+                var position = song.currentTime / song.duration;
+//                alert(position);
+                $('.current_time').css('width',position * 100 + '%');
+            });
+            $(function() {
+                $('.hashscroll').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html, body').animate({
+                                scrollTop: target.offset().top - 100 + 'px'
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+            $('.link').on('mouseover',function () {
+                $('.active_link').toggleClass('active_link');
+                $(this).toggleClass('active_link');
+            });
+            $('#links').on('mouseout',function () {
+                $('.active_link').toggleClass('active_link');
+            });
+            $('#nav-icon3,.tray_link,.tray_anchor').on('click',function () {
+                $('#tray').toggleClass('tray_open');
+                $('#nav').toggleClass('fixed');
+                $('#tray_links').toggleClass('tray_links_open');
+                $('#nav-icon3').toggleClass('open');
+            });
+
+        </script>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,16 @@
+/* Fonts */
+@font-face {
+  font-family: regular-text;
+  src: url(../fonts/MyriadPro-Regular.otf); }
+@font-face {
+  font-family: bold-text;
+  src: url(../fonts/MyriadPro-Bold.otf); }
+@font-face {
+  font-family: bold-italic-text;
+  src: url(../fonts/MyriadPro-BoldIt.otf); }
+@font-face {
+  font-family: semi-bold-text;
+  src: url(../fonts/MyriadPro-Semibold.otf); }
+/* Colors */
+
+/*# sourceMappingURL=variables.css.map */

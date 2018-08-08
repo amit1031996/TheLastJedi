@@ -1,0 +1,284 @@
+*
+  box-sizing: border-box
+  //background: rgba(0,0,0,0.2)
+
+html, body
+  height: 100%
+  padding: 0
+  margin: 0
+
+body
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  background: $tlj-white
+  color: $default-text
+  margin: 0
+  font-family: regular-text
+  font-size: 16px
+#wrapper
+  overflow-x: hidden
+
+
+
+
+/* Mobile */
+@media only screen and (min-width : 320px) and (max-width : 767px)
+  #logo
+    width: 140px !important
+    transform: translateX(-70px) translateY(-9px) !important
+  #poster
+    display: none
+  body
+    line-height: 5vw
+    font-size: 16px !important
+  #cover
+    background-image: url(../assets/mob/1x/cover.jpg)
+    height: 477px
+  #nav2
+    display: none !important
+  .content
+    font-size: 3.5vw !important
+    margin: $mob-margin 0 !important
+  #block
+    padding: 0 $gutter 0 $gutter
+    display: flex
+    flex-direction: column
+    height: inherit
+    margin: $mob-margin 0 $mob-margin 0 !important
+  #movie
+    height: auto
+    padding-bottom: 10vw
+  #title, #synopsis
+    text-align: center
+    height: auto
+  #title
+    font-size: 5vw !important
+  .cast_img :nth-child(1), .cast_img :nth-child(2)
+    display: none
+  #cast_container
+    width: 100% !important
+    justify-content: center !important
+  .cast_group
+    flex-direction: column
+    margin: 0 80px
+  .cast_text
+    text-align: center
+  .cast_group
+    margin-bottom: $mob-margin
+  .cast_img
+    margin-bottom: 15px
+  .cast_img img
+    width: 45vw
+  .character
+    font-size: 5vw !important
+  .actor
+    font-size: 3vw !important
+  #cast_container
+    margin-bottom: $mob-margin !important
+  .heading
+    margin-bottom:  $mob-margin !important
+    font-size: 16px
+  #gallery :nth-child(2), #gallery :nth-child(3)
+    display: none
+  #play
+    display: none !important
+  #video
+    margin: $mob-margin 0 $mob-margin*3.5 0 !important
+    height: 45vh !important
+  #play2
+    height: 20vw !important
+    font-size: 2.2vw !important
+    letter-spacing: 0.30vw
+  #music
+    margin: $mob-margin 0 $mob-margin 0
+  .player_img
+    min-width: 90vw !important
+    text-align: center
+  .player_details
+    margin: 52px 0 0 0 !important
+  .details_container
+    text-align: center
+    width: 100vw !important
+  #mob_album
+    width: 90vw !important
+  .audio-player
+    flex-direction: column
+  .track_title
+    font-size: 24px
+  .composer
+    font-size: 16px
+  .track_title, .composer
+    line-height: 30px
+  .album, .runtime
+    display: none
+  .progress_bar
+    width: 75vw
+    margin: 5vw auto
+  #nav-icon3
+    right: 16px !important
+  #play2 > div:nth-of-type(1)
+    background: url(../assets/mob/1x/thumb1.jpg) center/105% no-repeat !important
+  #play2 > div:nth-of-type(2)
+    background: url(../assets/mob/1x/thumb2.jpg) center/105% no-repeat !important
+  #play2 > div:nth-of-type(3)
+    background: url(../assets/mob/1x/thumb3.jpg) center/105% no-repeat !important
+  .active_video2
+    font-size: 2.5vw !important
+  .player_img img:nth-of-type(1), .player_img img:nth-of-type(2)
+    display: none
+  #play_button img:nth-of-type(1), .player_img img:nth-of-type(2)
+    display: none
+  #pause_button img:nth-of-type(1), .player_img img:nth-of-type(2)
+    display: none
+  #tray_links
+    height: 88% !important
+
+
+
+
+@media only screen and (min-width : 481px) and (max-width : 767px)
+  #cover
+    background-image: url(../assets/mob/1x/poster1.jpg)
+    height: 792px
+
+
+/* Tab */
+@media only screen and (min-width: 768px) and (max-width : 1024px)
+  #title
+    font-size: 26px !important
+  body
+    line-height: 25px
+    font-size: 16px !important
+  #cover
+    background-image: url(../assets/tab/1x/cover.jpg)
+    height: 792px
+  #nav2
+    display: none !important
+  .content
+    min-width: $tab-width
+    height: auto
+  #desk_post
+    display: none
+  #info
+    width: 448px
+  .content, #block
+    margin: $tab-margin 0 $tab-margin 0 !important
+  #block
+    min-height: 329px
+  #cast_container
+    width: 738px !important
+  .cast_group
+    flex-direction: column
+    margin: 0 40px
+  .cast_text
+    text-align: center
+  .cast_img :nth-child(1), .cast_img :nth-child(3)
+    display: none
+  .cast_group
+    margin-bottom: $tab-margin/2
+  .cast_img
+    margin-bottom: 30px
+  .character
+    font-size: 24px !important
+  .actor
+    font-size: 16px !important
+  #cast_container
+    margin-bottom: $desk-margin !important
+  .heading
+    margin-bottom:  $tab-margin !important
+    font-size: 20px
+  #gallery :nth-child(2), #gallery :nth-child(4)
+    display: none
+  #play
+    display: none !important
+  #video
+    margin: $tab-margin 0 $tab-margin*3.5 0 !important
+    height: 85vh !important
+  #music
+    margin: $tab-margin 0 $tab-margin 0
+  .audio-player
+    width: $tab-width
+  .track_title
+    font-size: 24px
+  .album, .composer, .runtime
+    font-size: 16px
+  .track_title, .album, .composer, .runtime
+    line-height: 30px
+  .player_img img:nth-of-type(1), .player_img img:nth-of-type(3)
+    display: none
+  #play_button img:nth-of-type(1), .player_img img:nth-of-type(3)
+    display: none
+  #pause_button img:nth-of-type(1), .player_img img:nth-of-type(3)
+    display: none
+  .details_container
+    height: 225px
+  #tray
+    font-size: 32px
+
+
+/* Desktop */
+@media only screen and (min-width : 1025px) and (max-width: 1823px)
+  body
+    line-height: 27px
+  #nav
+    display: none !important
+  #cover
+    background-image: url(../assets/desk/1x/cover2.jpg)
+    height: 792px
+  .content
+    min-width: $desk-width
+    height: auto
+  #tab_post
+    display: none
+  #info
+    width: 653px
+  #block
+    min-height: 329px
+  .cast_img :nth-child(2), .cast_img :nth-child(3)
+    display: none
+  .cast_text
+    width: 259px
+  .cast_img
+    margin-right: 30px
+  .cast_group
+    margin-bottom: $desk-margin/2
+  #cast_container
+    margin-bottom: $desk-margin !important
+  .heading
+    margin-bottom:  $desk-margin !important
+    font-size: 24px
+  #gallery :nth-child(3), #gallery :nth-child(4)
+    display: none
+  #play2
+    display: none !important
+  .track_title
+    font-size: 40px
+  .album, .composer, .runtime
+    font-size: 28px
+  .track_title, .album, .composer
+    line-height: 45px
+  #music
+    margin: $desk-margin 0 $desk-margin 0
+  .audio-player
+    width: $desk-width
+  .player_img img:nth-of-type(2), .player_img img:nth-of-type(3)
+    display: none
+  #play_button img:nth-of-type(2), .player_img img:nth-of-type(3)
+    display: none
+  #pause_button img:nth-of-type(2), .player_img img:nth-of-type(3)
+    display: none
+  .details_container
+    height: 325px
+  #fill
+    display: none
+
+
+
+/* Widescrenn */
+@media only screen and (min-width : 1824px)
+  #cover
+    display: none
+
+
+
+

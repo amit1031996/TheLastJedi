@@ -1,0 +1,280 @@
+#nav
+  width: 100vw
+  height: 70px
+  background-color: $nav-background
+  border-bottom: solid 1px $tlj-red
+  position: fixed
+  z-index: 6
+#nav_container
+  height: 100%
+  width: 100%
+  position: relative
+#tray
+  overflow-y: scroll
+  height: 0%
+  width: 100vw
+  position: fixed
+  background: white
+  z-index: 5
+  transition: height 0.75s ease
+#tray_container
+  height: 100%
+  width: 100%
+  position: relative
+#tray_links
+  height: 88%
+  width: 100%
+  position: absolute
+  margin-top: -999px
+  transition: margin-top 0.75s ease
+  display: flex
+  flex-direction: column
+
+#nav2
+  width: 100vw
+  height: 70px
+  background-color: $nav-background
+  display: flex
+  justify-content: center
+
+#links
+  height: 100%
+  width: 652px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  letter-spacing: 3px
+
+#cover
+  width: 100vw
+  background-position: 50% 0
+  background-repeat: no-repeat
+
+#home
+  width: 100vw
+
+.content
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  margin: $desk-margin 0 $desk-margin 0
+#block
+  min-width: inherit
+  display: flex
+  margin: $desk-margin 0 $desk-margin 0
+  justify-content: space-between
+
+#poster
+  width: 226px
+
+#info
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+#makers
+  display: flex
+  justify-content: space-between
+
+#cast_container
+  //background: red
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 auto
+  width: $desk-width
+  //background: lightgrey
+
+.cast_group
+  display: flex
+  align-items: center
+
+#video
+  -webkit-overflow-scrolling: touch
+  height: 105vh
+  margin: $desk-margin 0 $desk-margin*1.5 0
+
+.video_font
+  font-family: semi-bold-text
+  letter-spacing: 3px
+  text-transform: uppercase
+  color: $play-header
+
+#play
+  position: relative
+  height: 10vw
+  background: rgba(0,0,0,0.1)
+  width: 100%
+  margin-top: -10vw
+  z-index: 2
+  opacity: 0
+  transition: all 1s ease
+  display: flex
+
+.play_option
+  position: relative
+  flex: 1
+  display: flex
+  align-items: center
+  justify-content: center
+
+.play_img img
+  width: 11vw
+  height: 6vw
+
+.play_group
+
+  font-size: 1vw
+
+
+  align-items: center
+  position: absolute
+  left: 5%
+  right: 5%
+  top: 12.5%
+  bottom: 12.5%
+  display: flex
+  justify-content: space-between
+/*background: silver */
+
+.play_group:hover
+  cursor: pointer
+
+.play_img
+  position: relative
+  flex: 1
+  display: flex
+
+.active_video
+  &::before
+    content: 'NOW PLAYING'
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    background: rgba(0,0,0,0.3)
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.play_desc
+  color: white
+  margin-left: 2vw
+  flex: 2
+
+.play_info
+  color: $play-caption !important
+
+#vid_container
+  width: 100%
+  height: 90%
+
+#play:hover
+  opacity: 1
+
+#play2
+  font-size: 1.6vw
+  position: relative
+  width: 100vw
+  display: flex
+  height: 15vw
+  background: rgba(0,0,0,0.5)
+
+.play_option2
+  cursor: pointer
+  flex: 1
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: rgba(0,0,0,0.3)
+
+.play_desc2_active
+  padding: 0 1vw 0 1vw
+  position: absolute
+  bottom: 0
+  display: flex
+  width: 100%
+  justify-content: space-between
+
+.play_info2_active,.play_info2
+  color: $play-caption
+
+.play_desc2
+  text-align: right
+  position: absolute
+  top: 50%
+  right: 1vw
+  transform: translateY(-50%)
+
+.active_video2
+  width: 100%
+  letter-spacing: 1vw
+  position: absolute
+  top: 50%
+  text-align: center
+  font-size: 1.8vw
+  transform: translateY(-50%)
+
+.invisible
+  display: none
+
+.audio-player
+  position: relative
+  font-family: regular-text
+  display: flex
+  margin: 0 auto
+  justify-content: space-between
+  //background: grey
+.audio_progress
+  position: relative
+.player_img
+  flex: 3
+  position: relative
+  //background: cornflowerblue
+.player_details
+  margin: 0 0 0 104px
+  flex: 5
+  //background: indianred
+  display: flex
+  align-items: center
+.details_container
+  //background: darkseagreen
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.track_title
+  letter-spacing: 5px
+  color: $header-text
+  text-transform: uppercase
+.album
+  color: $default-text
+.composer
+  color: $inactive-text
+#play_button, #pause_button
+  position: absolute
+  top: 50%
+  right: 50%
+  transform: translate(50%, -50%)
+.runtime
+  color: $inactive-text
+  margin-bottom: 8px
+.tray_open
+  height: 100% !important
+.tray_links_open
+  margin-top: 0 !important
+
+#footer
+  width: 100vw
+  height: 10vw
+  display: flex
+  justify-content: center
+  align-items: center
+  background: $footer-background
